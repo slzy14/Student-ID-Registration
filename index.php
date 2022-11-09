@@ -5,11 +5,11 @@ include 'functions.php';
 // Home Page template below.
 ?>
 
-<?=template_header('Home')?>
+<?=template_header('Home Registration')?>
 
 <div class="content">
-	<h2>Home</h2>
-	<p>Welcome to the home page!</p>
+	<h2>Welcome to the student registration home page!</h2>
+	<p></p>
 </div>
 
 <?=template_footer()?>

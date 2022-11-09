@@ -1,4 +1,4 @@
-{
+*{
   	box-sizing: border-box;
   	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
   	font-size: 16px;
@@ -10,7 +10,7 @@ body {
   	margin: 0;
 }
 .navtop {
-  	background-color: #3f69a8;
+  	background-color: #0b5217;
   	height: 60px;
   	width: 100%;
   	border: 0;
@@ -30,13 +30,13 @@ body {
   	font-size: 24px;
   	padding: 0;
   	margin: 0;
-  	color: #ecf0f6;
+  	color: #FFFFFF;
   	font-weight: normal;
 }
 .navtop div a {
   	padding: 0 20px;
   	text-decoration: none;
-  	color: #c5d2e5;
+  	color: #FFFFFF;
   	font-weight: bold;
 }
 .navtop div a i {
@@ -56,7 +56,7 @@ body {
   	border-bottom: 1px solid #ebebeb;
   	color: #666666;
 }
-.read .create-contact {
+.read .create-student {
   	display: inline-block;
   	text-decoration: none;
   	background-color: #38b673;
@@ -66,7 +66,7 @@ body {
   	padding: 10px 15px;
   	margin: 15px 0;
 }
-.read .create-contact:hover {
+.read .create-student:hover {
   	background-color: #32a367;
 }
 .read .pagination {
@@ -83,7 +83,7 @@ body {
   	margin: 15px 0 15px 5px;
 }
 .read .pagination a:hover {
-  	background-color: #999b9d;
+  	background-color: #38b673;
 }
 .read table {
   	width: 100%;
@@ -107,7 +107,7 @@ body {
   	background-color: #fbfcfc;
 }
 .read table tbody tr:hover {
-  	background-color: #376ab7;
+  	background-color: #38b673;
 }
 .read table tbody tr:hover td {
   	color: #FFFFFF;
@@ -191,3 +191,8 @@ body {
 .delete .yesno a:hover {
   	background-color: #32a367;
 }
+
+.textarea {
+    max-width: 280px;
+}
+
