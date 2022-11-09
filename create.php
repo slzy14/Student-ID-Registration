@@ -15,10 +15,9 @@ if (!empty($_POST)) {
     $address = isset($_POST['address']) ? $_POST['address'] : '';
     $gname = isset($_POST['gname']) ? $_POST['gname'] : '';
     $gphone = isset($_POST['gphone']) ? $_POST['gphone'] : '';
-    $sub = isset($_POST['sub']) ? $_POST['sub'] : '';
     // Insert new record into the contacts table
     $stmt = $pdo->prepare('INSERT INTO students VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
-    $stmt->execute([$id, $name, $course, $phone, $created, $address, $gname, $gphone, $sub]);
+    $stmt->execute([$id, $name, $course, $phone, $created, $address, $gname, $gphone]);
     // Output message
     $msg = 'Created Successfully!';
 }
@@ -45,10 +44,6 @@ if (!empty($_POST)) {
         <label for="gphone">Guardian Phone #</label>
         <input type="text" name="gname" id="gname">
         <input type="text" name="gphone" id="gphone">
-        <label for="sub">Subjects</label>
-        <label></label>
-
-        <textarea id="sub" class="form-control" rows="8" cols="116"></textarea>
 
 
         <input type="submit" value="Submit">

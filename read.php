@@ -33,7 +33,7 @@ $num_students = $pdo->query('SELECT COUNT(*) FROM students')->fetchColumn();
                 <td>Address</td>
                 <td>Guardian</td>
                 <td>Guardian Phone #</td>
-                <td>Subjects</td>
+               
             </tr>
         </thead>
         <tbody>
@@ -47,7 +47,6 @@ $num_students = $pdo->query('SELECT COUNT(*) FROM students')->fetchColumn();
                 <td><?=$student['address']?></td>
                 <td><?=$student['gname']?></td>
                 <td><?=$student['gphone']?></td>
-                <td><?=$student['sub']?></td>
                 <td class="actions">
                     <a href="update.php?id=<?=$student['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
                     <a href="delete.php?id=<?=$student['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>

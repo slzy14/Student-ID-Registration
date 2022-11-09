@@ -14,10 +14,9 @@ if (isset($_GET['id'])) {
         $address = isset($_POST['address']) ? $_POST['address'] : '';
         $gname = isset($_POST['gname']) ? $_POST['gname'] : '';
         $gphone = isset($_POST['gphone']) ? $_POST['gphone'] : '';
-        $sub = isset($_POST['sub']) ? $_POST['sub'] : '';
         // Update the record
-        $stmt = $pdo->prepare('UPDATE students SET id = ?, name = ?, course = ?, phone = ?, created = ?, address = ?, gname = ?, gphone = ?, sub = ? WHERE id = ?');
-        $stmt->execute([$id, $name, $course, $phone, $created, $address, $gname, $gphone, $sub, $_GET['id']]);
+        $stmt = $pdo->prepare('UPDATE students SET id = ?, name = ?, course = ?, phone = ?, created = ?, address = ?, gname = ?, gphone = ? WHERE id = ?');
+        $stmt->execute([$id, $name, $course, $phone, $created, $address, $gname, $gphone, $_GET['id']]);
         $msg = 'Updated Successfully!';
     }
     // Get the contact from the contacts table
@@ -53,10 +52,6 @@ if (isset($_GET['id'])) {
         <label for="gphone">Guardian Phone #</label>
         <input type="text" name="gname" id="gname">
         <input type="text" name="gphone" id="gphone">
-        <label for="sub">Subjects</label>
-        <label></label>
-        
-        <textarea id="sub" class="form-control" rows="8" cols="116"></textarea>
         
         <input type="submit" value="Update">
     </form>
